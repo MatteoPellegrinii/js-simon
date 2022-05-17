@@ -5,27 +5,30 @@ let Ncasuali = [];
 
 addBtn.addEventListener("click", function(){
 
-    
-    while (Ncasuali.length < 5) {
-        let i = Math.floor(Math.random()*10)+1;
-        Ncasuali.push(i);
-    }  
-    console.log(Ncasuali);
-    const numelem = document.createElement("div");
-    content.append(numelem);
-    numelem.append(Ncasuali);
+    for (let i = 0; Ncasuali.length < 5; i++) {
 
+        let numeri = Math.floor(Math.random()*10)+1;
+        Ncasuali.push(numeri);
+
+        
+    }
+    content.append(parseInt(numeri));
+    
     setTimeout(myFunction, 5000);
 
 });
 
-
 function myFunction(){
-    let risposta = prompt("Qali sono i numeri inseriti?")
+    let risposta = parseInt(prompt("Quali sono i numeri inseriti?"))
     console.log(risposta);
     return risposta;
-    
+
+    if (risposta = numeri) {
+        
+    }
 }
+
+
 
 
 
